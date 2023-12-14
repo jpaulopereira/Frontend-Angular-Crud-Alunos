@@ -1,0 +1,17 @@
+.topo{
+    display: flex;
+    align-items:center;
+}
+
+.topo a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.topo .logo{
+    max-height: 150px;
+    max-width: 200px;
+    margin-top: 50px;
+
+}

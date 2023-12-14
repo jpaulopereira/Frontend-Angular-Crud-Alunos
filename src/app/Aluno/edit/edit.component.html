@@ -1,0 +1,44 @@
+<div class="container col-md-6">
+  <div class="card">
+    <div class="card-header">
+      <h3>Editar </h3>
+    </div>
+    <div class="card-body">
+      <form action="">
+        <div class="form-group">
+          <label>Nome:</label>
+          <input [(ngModel)]="aluno.name" name="name" type="text" class="form-control" placeholder="Nome">
+
+          <label>Matrícula:</label>
+          <input [(ngModel)]="aluno.matricula" name="matricula" type="text" class="form-control" placeholder="Matrícula">
+        </div>
+        <div class="form-group">
+          <label>CPF:</label>
+          <input [(ngModel)]="aluno.cpf" name="cpf" type="text" class="form-control" placeholder="CPF">
+        </div>
+        <div class="form-group">
+          <label>Telefone:</label>
+          <input [(ngModel)]="aluno.telefone" name="telefone" type="text" class="form-control" placeholder="Telefone">
+        </div>
+        <div class="form-group">
+          <label>E-mail:</label>
+          <input [(ngModel)]="aluno.email" name="email" type="email" class="form-control" placeholder=">E-mail">
+        </div>
+        <div class="form-group">
+          <label>Endereço:</label>
+          <input [(ngModel)]="aluno.endereco" name="endereco" type="text" class="form-control" placeholder="Endereço">
+        </div>
+        <div class="form-group">
+          <label>Data de Nascimento:</label>
+          <input [(ngModel)]="aluno.dataNascimento" name="dataNascimento" type="date" class="form-control" placeholder="Data de Nascimento">
+        </div>
+
+        <div class="form-group">
+          <label>Data de Cadastro:</label>
+          <input [(ngModel)]="aluno.dataHoraCadastro" name="dataHoraCadastro" type="datetime-local" class="form-control" placeholder="Data de Cadastro">
+        </div>
+        <button (click)="Actualizar(aluno)" class="btn badge badge-pill badge-dark">Editar</button>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<div class="container col-md-6">
+  <div class="card">
+    <div class="card-header">
+      <span class="badge badge-pill green"><i class="fas fa-user" aria-hidden="true"></i></span>
+      <span class="badge badge-dark">Informações do aluno</span><br>
+    </div>
+    <div class="card-body">
+      <span class="badge badge-dark">Nome: {{aluno.name}} </span><br>
+      <span class="badge badge-dark">Matrícula: {{aluno.matricula}} </span><br>
+      <span class="badge badge-dark">CPF: {{aluno.cpf}} </span><br>
+      <span class="badge badge-dark">Telefone: {{aluno.telefone}} </span><br>
+      <span class="badge badge-dark">Endereço: {{aluno.endereco}} </span><br>
+      <span class="badge badge-dark">E-mail: {{aluno.email}} </span><br>
+      <span class="badge badge-dark">Data de nascimento: {{aluno.dataNascimento | date : 'dd/MM/yyyy'}} </span><br>
+      <span class="badge badge-dark">Data de cadastro: {{aluno.dataHoraCadastro | date : 'dd/MM/yyyy hh:mm a': '-00:00'}} </span><br>
+      <button (click)="voltar()" class="badge badge-pill badge-dark">Voltar</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>

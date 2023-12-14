@@ -1,0 +1,36 @@
+<mat-sidenav-container class="topo mat-elevation-z8">
+  <mat-sidenav class="sidenav" mode="side" opened
+               fixedInViewport="true" fixedTopGap="64">
+    <mat-nav-list class="nav-list">
+      <a mat-list-item routerLink="home">
+        <i class="material-icons">
+          home
+        </i>
+        Página inicial
+      </a>
+
+      <a mat-list-item routerLink="/listar">
+        <i class="material-icons">
+          people
+        </i>
+        Listar alunos
+      </a>
+
+      <a mat-list-item routerLink="/add">
+        <i class="material-icons">
+          group_add
+        </i>
+        Incluir aluno
+      </a>
+      <a mat-list-item routerLink="/TotalAlunos">
+        <i class="material-icons">
+          wysiwyg
+        </i>
+        Total de alunos
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

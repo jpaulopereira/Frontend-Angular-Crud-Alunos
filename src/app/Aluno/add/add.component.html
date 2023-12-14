@@ -1,0 +1,54 @@
+<div class="container col-md-6" >
+  <div class="card">
+    <div class="card-header">
+      <h3>Dados</h3>
+    </div>
+    <div class="card-body">
+      <form>
+
+        <div class="form-group">
+          <label>Nome:</label>
+          <input [(ngModel)]="aluno.name" name="name" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label>Matrícula:</label>
+          <input [(ngModel)]="aluno.matricula" name="matricula" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label>CPF:</label>
+          <input [(ngModel)]="aluno.cpf" name="cpf" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label>Telefone:</label>
+          <input [(ngModel)]="aluno.telefone" name="telefone" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label>E-mail:</label>
+          <input [(ngModel)]="aluno.email" name="email" type="email" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label>Endereço:</label>
+          <input [(ngModel)]="aluno.endereco" name="endereco" type="text" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label>Data de Nascimento:</label>
+          <input [(ngModel)]="aluno.dataNascimento" name="dataNascimento" type="date" class="form-control">
+        </div>
+
+        <div class="form-group">
+        <label>Data de Cadastro:</label>
+        <input [(ngModel)]="aluno.dataHoraCadastro" name="dataHoraCadastro" type="datetime-local" class="form-control">
+        <button (click)="SalvarAluno()" class="badge badge-pill badge-dark" style="margin: 0px 3px; ">Salvar</button>
+        <button type="reset" value="Delete" class="badge badge-pill badge-dark">Limpar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
