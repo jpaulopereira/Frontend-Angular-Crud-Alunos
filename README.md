@@ -1,4 +1,4 @@
-# Consumo de endpoints para cadastrar, listar e excluir dados, validação de campos, (angular material, mat-paginator, mat-table, mat-form-field)
+# Consumo de endpoints(banco MySql) para cadastrar, listar e excluir dados, validação de campos, (angular material, mat-paginator, mat-table, mat-form-field)
 # CRUD em Angular.
 
 ![img1](https://user-images.githubusercontent.com/79548287/157584056-010bc78b-7042-4a1c-ba69-c6b1e6f3bde5.png)
